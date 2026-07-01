@@ -1,5 +1,5 @@
 
-# **Conformal Deformation Latent Space Models for Networks**
+# **Conformal deformation latent space models for networks**
 Carlos Nosa and Juan Sosa. Facultad de Ciencias, Universidad Nacional de Colombia.
 
 
@@ -30,10 +30,7 @@ positions and deformation parameters.
 
 ## Model
 
-For an undirected binary network $\mathbf{Y}=(y_{i,j})$, the probability of an edge is $y_{i,j} \sim \mathrm{Bernoulli}(p_{ij})$ where $p_{ij} = \mathrm{expit}(s_{ij})$. Unlike classical latent space models,
-$$ s_{ij} = \alpha_0 - \frac{\xi_i+\xi_j}{2} \,d_\kappa(z_i,z_j), $$
-
-where:
+For an undirected binary network $\mathbf{Y}=(y_{i,j})$, the probability of an edge is $y_{i,j} \sim \mathrm{Bernoulli}(p_{ij})$ where $p_{ij} = \mathrm{expit}(s_{ij})$. Unlike classical latent space models, $s_{ij} = \alpha_0 - \frac{\xi_i+\xi_j}{2} \,d_\kappa(z_i,z_j)$, where:
 
 
 - $z_i$ denotes the latent position,
@@ -42,7 +39,7 @@ where:
 
 - $d_\kappa$ is the geodesic distance induced by the latent geometry,
 
-- $\kappa\in\{-C,0,C\}$ determines the curvature.
+- $\kappa\in\{-C,0,C\}$ determines the sectional curvature.
 
 
 The deformation parameters modify the local metric scale while preserving the global manifold structure.
@@ -114,8 +111,8 @@ If this repository contributes to your research, please cite
 
 ```
 @article{Nosa2026,
-title={Conformal Deformation Latent Space Models for Networks},
-author={Carlos Nosa and Juan Sosa},
+title={Conformal deformation latent space models for networks},
+author={Nosa, Carlos and Sosa, Juan},
 year={2026},
 URL={https://github.com/cnosa/ConformalDeformationLSMN}
 }
